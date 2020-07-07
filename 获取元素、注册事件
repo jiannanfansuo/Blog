@@ -1,3 +1,12 @@
+文档：一个页面就是一个文档document
+元素：页面中所有标签都是元素element
+节点：网页中所有内容都是节点（标签、属性、文本、注释等） node
+
+***********************************************************************
+
+document.body
+document.documentElement
+
 document.getElementById('IdName');  //若ID不存在(没有找到)，return NULL
 document.getElementsByTagName('xxx');
 document.getElementsByName('xxx');
@@ -9,7 +18,7 @@ document.querySelectorAll('.a'); //返回集合
 
 
 
-********************************   注册事件    *******************************************
+********************************   注册事件    *****************************
 可以给网页上所有可见的元素注册事件
 
 //按钮注册事件
@@ -21,5 +30,4 @@ xxx.onclick = function(){
             事件源：触发事件的元素
             事件名称：click......
             事件处理函数
-            
-可
+  
