@@ -1,0 +1,34 @@
+************修改元素内容*************************
+  //可读可写
+element.innerText   //不识别HTML标签
+element.innerHTML   //推荐 ，W3C标准，保留空格和换行
+
+
+
+
+**************改变元素属性实现图片切换*****************
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片切换</title>	
+	</head>
+	<body>
+		<button type="button" id="xingqiu">星球</button>
+		<button type="button" id="hua">花</button>
+		<img src="img/xingqiu.jpg"  width="300px">
+		
+		<script type="text/javascript">
+			var xingqiu = document.getElementById('xingqiu');
+			var hua = document.getElementById('hua');
+			var img = document.querySelector('img');
+			
+			xingqiu.onclick = function(){
+				img.src = 'img/xingqiu.jpg';
+			}
+			hua.onclick = function(){
+				img.src = 'img/hua.jpg';
+			}
+		</script>		
+	</body>
+</html>
