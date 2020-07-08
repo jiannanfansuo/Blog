@@ -19,13 +19,13 @@ mvn -v 查看版本
 当执行maven命令需要使用某些插件时，首先会到本地仓库中查找
 本地仓库默认位置：[当前用户家目录]\.m2\repository
 修改本地仓库的位置：
-      1.maven解压目录--> conf--> settings.xml --> localRepository标签
+   maven解压目录--> conf--> settings.xml --> localRepository标签
 
-mvn clran   清理
-mvn compile   编译主程序
-mvn test-compile    编译测试程序
-mvn test    执行测试
-mvn package   打包
+                  mvn clran   清理
+                  mvn compile   编译主程序
+                  mvn test-compile    编译测试程序
+                  mvn test    执行测试
+                  mvn package   打包
 
 
 **********Maven核心概念之约定的目录结构***********************
@@ -41,9 +41,10 @@ HELLO(工程名)
   --pom.xml   //maven工程核心配置文件
 
 **************Maven核心概念之POM****************************
-POM: Project Object Model 项目对象模型
 
-POM.XML
+            POM: Project Object Model 项目对象模型
+
+            POM.XML
 
 **************Maven核心概念之坐标****************************
 
@@ -57,7 +58,22 @@ maven工程坐标与仓库中路径的对应关系
 
 
 **************Maven核心概念之依赖****************************
+
 **************Maven核心概念之仓库****************************
+
+            1.本地仓库
+            2.远程仓库
+                  -私服    Nexus
+                  -中央仓库
+                  -中央仓库镜像
+
+            仓库中的内容：maven工程
+                  1.maven自身需要的插件
+                  2.第三方框架或者工具的jar包
+                  3.自己开发的maven工程
+
+
+
 ***********Maven核心概念之生命周期/插件/目标*******************
 **************Maven核心概念之继承****************************
 **************Maven核心概念之聚合****************************
