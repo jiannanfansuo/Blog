@@ -4,3 +4,26 @@
     持久层：数据库交互    Mybatis
     
  
+持久层技术解决方案
+    JDBC技术：connection、PreparedStatement、ResultSet
+    spring JdbcTemplate : spring 中对 jdbc的简单封装
+    Apache DBUtils : 类似spring JdbcTemplate，对JDBC的简单封装
+
+以上这些都不是框架
+JDBC是规范
+spring JdbcTemplate 、 Apache DBUtils 都只是工具类
+
+*******************************************************************
+
+mybatis 内部封装了JDBC，使开发者只需要专注于SQL语句
+开发者无需关注注册驱动、创建连接等繁杂操作
+
+mybatis通过XML或者注解的方式将要执行的各种statement配置起来，并
+通过Java对象和statement中SQL的动态参数进行映射生成最终执行的SQL语句
+最后又mybatis框架执行SQL，并返回
+
+使用ORM思想实现结果集的封装 
+ORM：object relational mappging 对象关系映射
+把数据库表的实体类与实体类的属性对应起来，可以操作实体类来实现操作数据库表
+
+***************************mybatis环境搭建、入门案例*******************************
